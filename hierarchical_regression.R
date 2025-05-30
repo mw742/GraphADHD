@@ -80,7 +80,6 @@ cat("Shape after dropna:", nrow(merged_df), "rows\n")
 merged_df$PRS_z         <- scale(merged_df$PRS)[,1]
 
 # NOTE: This was originally "Parent ADHD" but references the alcohol column.
-# If you really have a separate ADHD measure for the parent, replace with that variable here.
 merged_df$ParentADHD_z  <- scale(merged_df$abcl_scr_sub_use_alcohol_t)[,1]  
 
 # We'll define the parent alcohol usage for the interaction term
